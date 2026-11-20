@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+        }
+
+        nav h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a8a,
+                #0891b2
+            );
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 35px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>MyWebsite</h1>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to My Website 🚀</h2>
+
+        <p>
+            This is my first website created using
+            HTML, CSS, and JavaScript.
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am learning web development and
+            building amazing things with code.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 MyWebsite | Made with ❤️</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Congratulations! Your website is working 🎉");
+        }
+    </script>
+
+</body>
+</html>
